@@ -189,23 +189,4 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K,V>{
     public void printInOrder() {
         printInOrder(BSTree);
     }
-
-    public static void main(String[] args) {
-        BSTMap<String, Integer> test = new BSTMap<>();
-        test.put("dog", 7);
-        int i = 1;
-        test.put("cat" + i, 5);
-        test.printInOrder();
-        System.out.println(test.get("cat" + i));
-        System.out.println(test.size());
-        if (test.containsKey("cat")) {
-            System.out.println("before clear");
-        }
-        test.clear();
-        System.out.println(test.size());
-        if (test.containsKey("cat")) {
-            System.out.println("after clear");
-        }
-    }
-
 }
